@@ -11,19 +11,15 @@
 }
 
 .ct-catalog-cards-container {
-  border: 1px solid green;
-  display: flex;
-  gap: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(25.8rem, 1fr));
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 576px) {
   .ct-catalog-main {
     padding: 0 2rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .ct-catalog-cards-container {
-    gap: 3rem;
   }
 }
