@@ -1,25 +1,39 @@
-form {
+.ct-search-bar {
     height:4rem;
     display: flex;
 }
 
-input {
-    width: calc(100% - 7.7rem);
-    background-color: var(--bg-color-primary);
-    border-width: 1px 0 1px 1px;
-    border-style: solid;
-    border-color: var(--text-color-search);
-    color: var(--text-color-search);
+.ct-search-bar input,
+.ct-search-bar button {
     font-size: 1.4rem;
     line-height: 1.6rem;
+}
+
+.ct-search-bar input {
+    width: calc(100% - 7.7rem);
+    background-color: var(--bg-color-primary);
+    border: 1px solid var(--text-color-search);
+    border-right: none;
+    color: var(--text-color-search);
     padding: 1.2rem 1.5rem;
     border-radius: 5px 0 0 5px;
 }
 
-button {
+.ct-search-bar input::placeholder {
+    color: var(--text-color-search);
+}
+
+.ct-search-bar input:focus {
+    outline: none;
+}
+
+.ct-search-bar button {
     width: 7.7rem;
     padding: 1.2rem 1.1rem;
     color: var(--text-color-button);
     background-color: var(--bg-color-button);
     border-radius: 0 5px 5px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
 }

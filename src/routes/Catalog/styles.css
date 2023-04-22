@@ -1,0 +1,29 @@
+#ct-catalog-section {
+  padding: 4rem 0;
+}
+
+.ct-catalog-main {
+  padding: 0 1rem;
+}
+
+.ct-search-bar-container {
+  margin-bottom: 4rem;
+}
+
+.ct-catalog-cards-container {
+  border: 1px solid green;
+  display: flex;
+  gap: 2rem;
+}
+
+@media (min-width: 576px) {
+  .ct-catalog-main {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .ct-catalog-cards-container {
+    gap: 3rem;
+  }
+}
